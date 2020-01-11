@@ -220,7 +220,7 @@ $(function() {
   });
 
   // Animation On Scroll
-  AOS.init({
-    once: true
-  });
+  // AOS.init({
+  //   once: true
+  // });
 });
