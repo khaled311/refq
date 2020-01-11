@@ -869,14 +869,15 @@ header .content .search > span.lnr {
   header .content .search {
     position: absolute;
     top: 70%;
+    left: 50%;
     z-index: 999;
     background-color: transparent;
     width: 80%;
     margin: 0;
     height: auto;
     border: 0;
-    -webkit-transform: translateY(90px);
-            transform: translateY(90px);
+    -webkit-transform: translateY(90px) translateX(-50%);
+            transform: translateY(90px) translateX(-50%);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .5s;
@@ -885,8 +886,8 @@ header .content .search > span.lnr {
   header .content .search.open {
     visibility: visible;
     opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0px) translateX(-50%);
+            transform: translateY(0px) translateX(-50%);
   }
   header .content .search > span.lnr {
     display: -webkit-box;
