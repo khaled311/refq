@@ -184,8 +184,8 @@ html[dir="ltr"] header .dropdown-menu-right {
 }
 
 .sk-chase {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   position: relative;
   -webkit-animation: sk-chase 2.5s infinite linear both;
           animation: sk-chase 2.5s infinite linear both;
