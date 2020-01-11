@@ -328,7 +328,7 @@ html[dir="ltr"] header .dropdown-menu-right {
   right: 0;
   width: 100vw;
   height: 100%;
-  background-color: #33BBC7;
+  background-color: rgba(51, 187, 199, 0.8);
   z-index: 999;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -363,7 +363,7 @@ html[dir="ltr"] header .dropdown-menu-right {
   width: 100%;
   height: 100%;
   background-color: #32BAC6;
-  z-index: 9999;
+  z-index: 999;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: -webkit-box;
