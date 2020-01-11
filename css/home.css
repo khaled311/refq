@@ -2710,6 +2710,11 @@ footer .social a:hover i {
   margin-right: 5px;
 }
 
+html[dir="ltr"] .end .content a img {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
 @media (max-width: 480px) {
   .end .content a {
     margin-top: 10px;
