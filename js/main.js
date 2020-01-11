@@ -20,7 +20,7 @@ $(function() {
   $(".menuTriger").on("click", function() {
     $(".sideNav").toggleClass("open");
     $(".navover").toggleClass("open");
-    $("body").css("overflow", "hidden");
+    $("html").css("overflow-y", "hidden");
     setTimeout(function() {
       $(".sideNav").addClass("origin");
     }, 500);
@@ -32,7 +32,7 @@ $(function() {
       $(".navover").removeClass("open");
       $(".sideNav").toggleClass("open");
       // $(".sideNav").toggleClass("origin");
-      $("body").css("overflow", "auto");
+      $("html").css("overflow-y", "auto");
       setTimeout(function() {
         $(".sideNav").removeClass("origin");
       }, 600);
