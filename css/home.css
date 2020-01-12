@@ -782,7 +782,6 @@ header .content {
 }
 
 header .content .logo img {
-  width: 178px;
   height: 104px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
