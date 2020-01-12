@@ -385,6 +385,11 @@ html[dir="ltr"] header .dropdown-menu-right {
           transform: scale(0) translate(10px, 10px);
 }
 
+html[dir="ltr"] .sideNav {
+  right: unset;
+  left: 0;
+}
+
 .sideNav.open {
   -webkit-transform: scale(1);
           transform: scale(1);
