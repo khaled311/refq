@@ -1113,7 +1113,7 @@ header .content .search .input-group > button {
   padding: 0;
   position: absolute;
   top: 50%;
-  left: 2px;
+  left: 4px;
   -webkit-transform: translateY(-52%);
           transform: translateY(-52%);
   z-index: 99;
@@ -1680,7 +1680,7 @@ html[dir="ltr"] .navBar .container > ul > li.drop .megaMenu ul li {
 }
 
 .products.featured {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .products h2 {
@@ -1927,7 +1927,7 @@ html[dir="ltr"] .product .rating i:not(:last-child) {
 
 .product .product-options .toCart:hover {
   background-image: none;
-  background-color: #4794cf;
+  background-color: #2cb8c5;
 }
 
 .product .product-options .heart {
@@ -1952,7 +1952,7 @@ html[dir="ltr"] .product .rating i:not(:last-child) {
 }
 
 .product .product-options .heart:hover {
-  background-color: #33bbc7;
+  background-color: #e23167;
 }
 
 .banner1 .pic {
@@ -2025,7 +2025,7 @@ html[dir="ltr"] .product .rating i:not(:last-child) {
 .testim .item {
   border: 1px solid #f2f2f2;
   background-color: #fff;
-  padding: 40px;
+  padding: 30px;
 }
 
 html[dir="ltr"] .testim .item {
@@ -2153,8 +2153,8 @@ html[dir="ltr"] .blog .item {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(116, 46, 112, 0.8)), to(rgba(154, 86, 149, 0.8)));
-  background-image: linear-gradient(to right, rgba(116, 46, 112, 0.8), rgba(154, 86, 149, 0.8));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(116, 46, 112, 0.8)), to(rgba(154, 86, 149, 0.95)));
+  background-image: linear-gradient(to right, rgba(116, 46, 112, 0.8), rgba(154, 86, 149, 0.95));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
