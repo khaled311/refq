@@ -813,6 +813,15 @@ header .content {
   }
 }
 
+header .content .logo img {
+  width: 178px;
+  height: 104px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
 header .content .menuTriger, header .content .searchTriger {
   display: none !important;
 }
@@ -2743,6 +2752,12 @@ footer .social a:hover i {
 }
 
 .end .content a img {
+  width: 58px;
+  height: 21px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   margin-right: 5px;
 }
 
@@ -2755,6 +2770,15 @@ html[dir="ltr"] .end .content a img {
   .end .content a {
     margin-top: 10px;
   }
+}
+
+.end .content > img {
+  width: 220px;
+  height: 44px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 /*# sourceMappingURL=home.css.map */
