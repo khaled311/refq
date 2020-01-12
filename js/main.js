@@ -19,11 +19,11 @@ $(function() {
   // open Side Nav
   $(".menuTriger").on("click", function() {
     $(".sideNav").toggleClass("open");
-    $(".navover").toggleClass("open");
+    // $(".navover").toggleClass("open");
     $("html").css("overflow-y", "hidden");
-    setTimeout(function() {
-      $(".sideNav").addClass("origin");
-    }, 500);
+    // setTimeout(function() {
+    //   $(".sideNav").addClass("origin");
+    // }, 500);
   });
 
   // Close Side Nav
@@ -33,9 +33,9 @@ $(function() {
       $(".sideNav").toggleClass("open");
       // $(".sideNav").toggleClass("origin");
       $("html").css("overflow-y", "auto");
-      setTimeout(function() {
-        $(".sideNav").removeClass("origin");
-      }, 600);
+      // setTimeout(function() {
+      //   $(".sideNav").removeClass("origin");
+      // }, 600);
     }
   });
 

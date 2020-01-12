@@ -360,10 +360,12 @@ html[dir="ltr"] header .dropdown-menu-right {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #32BAC6;
+  width: 50px;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#742e70), to(#9a5695));
+  background-image: linear-gradient(to right bottom, #742e70, #9a5695);
   z-index: 999;
+  border-radius: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: -webkit-box;
@@ -379,31 +381,20 @@ html[dir="ltr"] header .dropdown-menu-right {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-}
-
-.sideNav:after {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 200%;
-  background-color: #FFF;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: -1;
-}
-
-html[dir="ltr"] .sideNav {
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform: scale(0) translate(10px, 10px);
+          transform: scale(0) translate(10px, 10px);
 }
 
 .sideNav.open {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sideNav.open .options {
+  opacity: 1;
 }
 
 .sideNav.open ul {
@@ -440,6 +431,7 @@ html[dir="ltr"] .sideNav.origin {
   width: 100%;
   position: absolute;
   top: 50px;
+  opacity: 0;
 }
 
 .sideNav .options .lang a {
@@ -453,39 +445,10 @@ html[dir="ltr"] .sideNav.origin {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
-  color: #4b4c4c;
+  color: #fff;
   width: 32px;
   height: 32px;
   background-color: transparent;
-}
-
-html[dir="ltr"] .sideNav .options .lang a {
-  color: #fff;
-}
-
-.sideNav .options .search_pop {
-  width: 32px;
-  height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  background-color: #b46b93;
-  color: #fff;
-  font-size: 14px;
-  margin-left: auto;
-  margin-right: 20px;
-}
-
-html[dir="ltr"] .sideNav .options .search_pop {
-  margin-left: 20px;
-  margin-right: auto;
 }
 
 .sideNav .options .close1 {
@@ -493,7 +456,7 @@ html[dir="ltr"] .sideNav .options .search_pop {
   display: -ms-flexbox;
   display: flex;
   font-size: 18px;
-  color: #777;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -502,7 +465,7 @@ html[dir="ltr"] .sideNav .options .search_pop {
 }
 
 html[dir="ltr"] .sideNav .options .close1 span {
-  color: #333;
+  color: #fff;
 }
 
 .sideNav > ul {
@@ -576,7 +539,7 @@ html[dir="ltr"] .sideNav > ul > li {
   margin-right: 10px;
   margin-left: -20px;
   font-size: 10px;
-  color: #333;
+  color: #fff;
 }
 
 html[dir="ltr"] .sideNav > ul > li.drop > a > span {
@@ -595,7 +558,7 @@ html[dir="ltr"] .sideNav > ul > li.drop > a > span {
   font-family: "tjMd";
   position: relative;
   font-size: 17px;
-  color: #333;
+  color: #fff;
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -612,7 +575,7 @@ html[dir="ltr"] .sideNav > ul > li.drop > a > span {
 
 .sideNav > ul > li .megaMenu li a {
   font-size: 15px;
-  color: #777;
+  color: #e4e4e4;
 }
 
 .sideNav > ul > li .drop {
@@ -929,9 +892,9 @@ header .content .search .input-group {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1015,10 +978,10 @@ html[dir="ltr"] header .content .search .input-group-btn button {
 
 @media (max-width: 991px) {
   header .content .search .input-group-btn button {
-    padding-left: 70px;
+    padding-left: 27px;
   }
   html[dir="ltr"] header .content .search .input-group-btn button {
-    padding-right: 70px;
+    padding-right: 27px;
   }
 }
 
@@ -1050,6 +1013,7 @@ header .content .search .input-group-btn button:active {
 }
 
 header .content .search .input-group-btn button:focus {
+  background-color: #FFF !important;
   outline: none;
 }
 
@@ -1081,7 +1045,7 @@ html[dir="ltr"] header .content .search .input-group input {
   header .content .search .input-group input {
     width: 100%;
     height: 45px;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
