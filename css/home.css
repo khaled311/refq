@@ -1996,6 +1996,12 @@ html[dir="ltr"] .testim .item {
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .testim .item {
+    text-align: center;
+  }
+}
+
 .testim .item .text {
   font-size: 16px;
   color: #333333;
@@ -2105,6 +2111,12 @@ html[dir="ltr"] .testim .item .rating i:not(:last-child) {
 
 html[dir="ltr"] .blog .item {
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .blog .item {
+    text-align: center;
+  }
 }
 
 .blog .pic {
