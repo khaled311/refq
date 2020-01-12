@@ -2734,7 +2734,6 @@ footer .social a:hover i {
 
 .end .content a img {
   width: 58px;
-  height: 21px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: translateZ(0);
@@ -2755,7 +2754,6 @@ html[dir="ltr"] .end .content a img {
 
 .end .content > img {
   width: 220px;
-  height: 44px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: translateZ(0);
